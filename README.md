@@ -1,4 +1,4 @@
-# Circle Geometry Visualizer
+# Circle Geometry Visualiser
 
 A simple JavaScript and HTML Canvas animation that provides a visual proof for a classic geometry problem involving inscribed circles. This visualisation demonstrates the relationship between the radii of tangent circles, leading to a specific integer solution.
 
