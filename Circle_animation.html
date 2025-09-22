@@ -36,3 +36,62 @@
     <text x="85" y="0" text-anchor="start">
       <tspan>Start /</tspan>
       <tspan x="85" dy="1.2em">4th Rev</tspan>
+    </text>
+    
+    <text x="0" y="-95" text-anchor="middle" >3rd Revolution</text>
+
+    <text x="-85" y="5" text-anchor="end">2nd Revolution</text>
+
+    <text x="0" y="105" text-anchor="middle" >1st Revolution</text>
+  </g>
+
+  <g id="OrbitGroup">
+    <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 0 0"
+        to="360 0 0"
+        dur="12s"
+        repeatCount="indefinite" />
+
+    <g transform="translate(80, 0)" id="TranslationGroup">
+      
+      <g id="SpinGroup">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 0 0"
+            to="1080 0 0" 
+            dur="12s"
+            repeatCount="indefinite" />
+        <g id="CircleA">
+            <circle cx="0" cy="0" r="20" fill="royalblue" opacity="0.9" stroke="black" stroke-width="1"/>
+            <text x="0" y="5" text-anchor="middle" font-size="16" fill="white">A</text>
+            
+            <path d="M 20 0 L 12 -5 L 12 5 Z" fill="yellow" stroke="black" stroke-width="0.5"/>
+            <line x1="0" y1="0" x2="12" y2="0" stroke="yellow" stroke-width="2"/>
+            
+            <circle cx="0" cy="0" r="1.5" fill="yellow"/>
+
+            <text x="0" y="15" text-anchor="middle" font-size="8" fill="white">r=20</text>
+        </g>
+        
+      </g>
+    </g>
+  </g>
+  
+  <g class="explanation" transform="translate(0, 140)">
+    <rect x="-125" y="-15" width="250" height="85" fill="#f9f9f9" stroke="lightgray" rx="5"/>
+    <text x="0" y="5" text-anchor="middle">
+      <tspan>Radius of B (R=60) is 3x radius of A (r=20).</tspan>
+      <tspan x="0" dy="1.2em">The ratio N = R/r = 3.</tspan>
+    </text>
+    
+    <text x="0" y="35" text-anchor="middle" font-weight="bold">Why 4 revolutions? (The N+1 Rule)</text>
+
+    <text x="0" y="50" text-anchor="middle">A gains 3 revolutions from rolling along B's circumference.</text>
+    <text x="0" y="65" text-anchor="middle">A gains 1 extra revolution from orbiting around the centre of B.</text>
+    
+  </g>
+
+</svg>
